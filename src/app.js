@@ -3,6 +3,8 @@ const path = require('path')
 const hbs =  require('hbs')
 const geo = require('./utils/geocodeapi')
 
+const port = process.env.PORT || 3000
+
 console.log(__dirname)
 console.log(__filename)
 
@@ -106,7 +108,10 @@ app.get('*',(req, res)=>{
 //app.com
 //app.com/help
 //app.com/info
-
-app.listen(3000, ()=>{
+portapp.listen(port, ()=>{
     console.log('Server is up on 3000 port')
 })
+/*
+app.listen(3000, ()=>{
+    console.log('Server is up on 3000 port')
+}) //used it when we run application locally */

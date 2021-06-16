@@ -15,7 +15,7 @@ weatherinp.addEventListener('submit', (e)=>{
    const inp =  document.querySelector('input').value
 
 
-   fetch(`http://localhost:3000/weather?address=${inp}`).then(response =>{
+   fetch(`/weather?address=${inp}`).then(response =>{
     response.json().then(data=>{
         if(data.error)
         {
