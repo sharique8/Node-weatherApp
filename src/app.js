@@ -108,7 +108,7 @@ app.get('*',(req, res)=>{
 //app.com
 //app.com/help
 //app.com/info
-portapp.listen(port, ()=>{
+app.listen(port, ()=>{
     console.log('Server is up on 3000 port')
 })
 /*
